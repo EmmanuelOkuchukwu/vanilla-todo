@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/assets/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% center;
+    height: 100vh;
+}
+
+.navbar {
+    // background-color: red;
+    padding: 15px;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input[type="text"] { 
+        height: 1.5rem;
+        border: none;
+        border-radius: 4px;
+        padding: 6px;
+        width: 480px;
+    }
+    button {
+        padding: 6px;
+        height: 2.3rem;
+        border: none;
+        background-color: #1BA1E2;
+        color: lightgrey;
+        &:hover {
+            background-color: slateblue;
+            border-radius: 5px;
+            transition: 0.2s ease-in-out;
+            color: white;
+        }
+    }
+}
+
+.display-todos {
+    display: flex;
+    justify-content: center;
+    li {
+        list-style: none;
+        padding: 10px;
+        width: 400px;
+        &:hover {
+            transition: 0.2s ease-in-out;
+            background-color: lightgrey;
+        }
+    }
+    li:nth-child(odd) {
+        background-color: #dddddd;
+        &:hover {
+            transition: 0.2s ease-in-out;
+            background-color: lightgrey;
+        }
+    }
+    li:nth-child(even) {
+        background-color: lightgrey;
+        &:hover {
+            transition: 0.2s ease-in-out;
+            background-color: grey;
+        }
+    }
+}
