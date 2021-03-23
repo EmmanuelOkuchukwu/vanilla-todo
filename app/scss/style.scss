@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    input[type="text"] { 
+    input[type="text"] {
         height: 1.5rem;
         border: none;
         border-radius: 4px;
@@ -46,23 +46,24 @@ body {
 .display-todos {
     display: flex;
     justify-content: center;
-    li {
+    p {
         list-style: none;
         padding: 10px;
         width: 400px;
         &:hover {
             transition: 0.2s ease-in-out;
             background-color: lightgrey;
+            cursor: pointer;
         }
     }
-    li:nth-child(odd) {
+    p:nth-child(odd) {
         background-color: #dddddd;
         &:hover {
             transition: 0.2s ease-in-out;
             background-color: lightgrey;
         }
     }
-    li:nth-child(even) {
+    p:nth-child(even) {
         background-color: lightgrey;
         &:hover {
             transition: 0.2s ease-in-out;

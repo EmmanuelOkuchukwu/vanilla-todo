@@ -1,2 +1,2 @@
-const userName="Emmanuel",todoLists=["Organize office","Read Bible Plan"],displayingUsers=todoLists.map((s=>{console.log(s)}));
+const addTodo=document.getElementById("functionSubmit"),inputTodo=document.getElementById("inputControl"),todoContainer=document.getElementById("todosDisplay");addTodo.addEventListener("click",(function(){const t=document.createElement("p");t.innerText=inputTodo.value,todoContainer.appendChild(t),t.addEventListener("click",(function(){t.style.backgroundColor="red",t.style.textDecoration="line-through"})),t.addEventListener("dblclick",(function(){todoContainer.removeChild(t)}))}));
 //# sourceMappingURL=script.js.map
