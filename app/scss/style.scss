@@ -45,7 +45,9 @@ body {
 
 .display-todos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     p {
         list-style: none;
         padding: 10px;
